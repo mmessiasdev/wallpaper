@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/wallpaper/static/js/main.aedd06f0.js",
+    "main.js": "/wallpaper/static/js/main.e94ff953.js",
     "index.html": "/wallpaper/index.html",
-    "main.aedd06f0.js.map": "/wallpaper/static/js/main.aedd06f0.js.map"
+    "main.e94ff953.js.map": "/wallpaper/static/js/main.e94ff953.js.map"
   },
   "entrypoints": [
-    "static/js/main.aedd06f0.js"
+    "static/js/main.e94ff953.js"
   ]
 }
