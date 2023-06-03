@@ -7,6 +7,7 @@ import { Container } from "../../components/styles/container/style";
 import { useEffect, useState } from "react";
 import Spinner from 'react-bootstrap/Spinner';
 import Item from "../../components/contents/item";
+import Footer from "../../components/contents/footer";
 
 const HomePage = () => {
     const [initPage, setInitPage] = useState(false);
@@ -66,6 +67,9 @@ const HomePage = () => {
                                 )
                             })}
                         </Container>
+                    </Container>
+                    <Container pad="0px 10%">
+                        <Footer />
                     </Container>
                 </div>
             }
