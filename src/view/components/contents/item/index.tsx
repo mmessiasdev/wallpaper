@@ -1,11 +1,23 @@
+import { Link } from "react-router-dom";
 import { Container } from "../../styles/container/style"
 
-const Item = () => {
-    return(
-        <>
-            <Container margin="0px 0px 0px 60px" color="#bfbfbf" height="220px" radius="20px" width="150px">
 
-            </Container> 
+interface props {
+    img: string,
+    href: string,
+}
+
+const Item = ({ img, href }: props) => {
+    return (
+        <>
+            <Link to={href}>
+            
+                <Container margin="0px 30px" color="#bfbfbf" height="220px" radius="20px" width="150px" overflow="hidden" disp="flex" justify="center" aligh="center">
+                    <img className="banner" height="100%" src={img} />
+
+                </Container>
+
+            </Link>
         </>
     )
 }

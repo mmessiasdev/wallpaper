@@ -5,6 +5,7 @@ import Style from '../../style';
 
 import GlobalStyle from '../styles/global';
 import HomePage from '../screens/homepage';
+import ContentWallpaper from '../screens/content';
 
 
 function RoutesPage() {
@@ -15,6 +16,8 @@ function RoutesPage() {
             <Router history={History}>
                 <Routes>
                     <Route path='/' element={<HomePage />} />
+                    <Route path='/wallpaper/' element={<HomePage />} />
+                    <Route path='/wallpaper/:id' element={<ContentWallpaper />} />
                 </Routes>
             </Router>
         </>
