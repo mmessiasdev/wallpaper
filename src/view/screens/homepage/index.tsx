@@ -42,24 +42,24 @@ const HomePage = () => {
     return (
         <>
             {
-                initPage ? <div><h1 className="textanimation">M. Messias Dev</h1></div> : <div>
+                initPage ? <div><h1 className="textanimation">@mmessiasdev</h1></div> : <div>
                     <DefaultTitle>
                         <TypeText tag="h1">Wallpaper</TypeText>
                     </DefaultTitle>
+                    <Container pad="25px 10%">
+                        <Banner img={banner?.attributes.wallpaper.data[0].attributes.formats.large.url} />
+
+                    </Container>
                     <Container pad="50px 0px 100px 0px">
                         <Container margin="20px 20px" pad="0px 10%">
                             <TypeText tag="h4">All Wallpapers</TypeText>
-                        </Container>
-                        <Container pad="0px 10%">
-                            <Banner img={banner?.attributes.wallpaper.data[0].attributes.formats.large.url} />
-
                         </Container>
                         <Container className="banner" disp="flex" overflow="scroll" pad="0px 10%">
                             {post.map((res) => {
                                 return (
                                     <>
                                         <Container pad="30px 0px">
-                                            <Item href={`/wallpaper/${res.id}`} img={res.attributes.wallpaper.data[0].attributes.formats.large.url} />
+                                            <Item href={`/wallpaper/${res.id}`} img={res.attributes.wallpaper.data[0].attributes.formats.medium.url} />
 
                                         </Container>
                                     </>
