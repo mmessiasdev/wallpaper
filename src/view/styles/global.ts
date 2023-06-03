@@ -62,6 +62,7 @@ export default createGlobalStyle<Props>`
         text-align: start;
     }
     a{
+        cursor: pointer;
         text-decoration: none;
         background-color: transparent;
         color: ${props => props.theme.colors.text};
